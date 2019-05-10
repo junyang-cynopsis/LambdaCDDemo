@@ -4,6 +4,7 @@ phases:
     commands:
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket ocr-data-dev --output-template-file outputSamTemplate.yaml
 artifacts:
+  type: zip
   files:
     - samTemplate.yaml
     - outputSamTemplate.yaml
